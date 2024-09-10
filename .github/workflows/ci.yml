@@ -24,7 +24,6 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v4
 
-    steps:
-      - name: Style check
-        run: test -z $(go fmt ./...)
+    - name: Style check
+      run: test -z $(go fmt ./...)
 
